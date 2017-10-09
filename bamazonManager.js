@@ -61,7 +61,7 @@ function viewProducts() {
 		var table = new Table({
 			head: ["item_id", "product_name", "price", "stock_quantity"],
 			style: {
-				head: ["blue"],
+				head: ["yellow"],
 				compact: false,
 				colAligns: ["center"]
 			}
@@ -94,7 +94,7 @@ function viewLowInventory() {
 		var table = new Table({
 			head: ["item_id", "product_name", "department_name", 'price', 'stock_quantity'],
 			style: {
-				head: ['blue'],
+				head: ['yellow'],
 				compact: false,
 				colAligns: ['center'],
 			}
@@ -218,7 +218,7 @@ function addNewProduct() {
 			var table = new Table({
 				head: ["product_name", "department_name", 'price', 'stock_quantity'],
 				style: {
-					head: ['blue'],
+					head: ['yellow'],
 					compact: false,
 					colAligns: ['center'],
 				}

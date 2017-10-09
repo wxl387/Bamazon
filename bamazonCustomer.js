@@ -12,7 +12,6 @@ var connection = mysql.createConnection({
 });
 
 connection.connect(function(err) {
-	console.log("test");
 	if(err) throw err;
 	initDisplay();
 });
@@ -24,7 +23,7 @@ function initDisplay() {
 		var table = new Table({
 			head: ["item_id", "product_name", "price", ],
 			style: {
-				head: ["blue"],
+				head: ["yellow"],
 				compact: false,
 				colAligns: ["center"]
 			}
@@ -90,8 +89,7 @@ function quantityCheck(id, quantityInput) {
 	connection.query(quantityCheck, function(err,res) {
 		
 		var currentQuantity = res[0].stock_quantity;
-
-		console.log("Current stock_quantity: " + currentQuantity);	
+	
 		if (quantityInput <= currentQuantity){
 			console.log("Order has been placed");
 			
