@@ -25,3 +25,5 @@ A storefront build with the database created by MySQL, and command with Node.js.
 
 * The process of adding a new item to the database
 ![Manager Add New Item](./img/managerAddNewItem.PNG)
+
+
